@@ -1,0 +1,16 @@
+{% extends "base_auth.html" %}
+{% block content %}
+<h1>JobSeeker Signup</h1>
+<div class="container">
+    <form class="my-2" action="{% url 'jobfinder-signup' %}" method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Signup">
+    </form>
+</div>
+    <p>Already registered!</p>
+    <a href="{% url 'login' %}">Login Now</a><br>
+{% endblock content %}
+{% block loginlogout %}
+<a href="{% url 'login' %}">Login</a>
+{% endblock loginlogout %}

@@ -1,0 +1,29 @@
+{% extends "base.html" %} {% load static %} 
+
+{% block profile %} 
+
+
+<a href="{% url 'userprofile' username=username %}">
+  <i class="fa-sharp fa-solid fa-user fa-xl" style="color: #051726;"></i>
+            </a>
+{% endblock profile %} 
+{% block loginOut%}
+
+<a href="{% url 'logout' %}">Logout</a>
+{% endblock loginOut%}
+
+{% block footer %}
+<footer>
+<div class="border-2 border-black h-20 flex justify-between">
+  <div class="flex flex-col justify-center">
+    <label for="subscribe">Subscribe</label>
+    <input class="border-2 border-black" type="text" name="subscribe" id="subscribe">
+    <input type="submit" value="Submit">
+  </div>
+  <div>@copyright nayarojgar</div>
+  <div>Important Links</div>
+  
+
+</div>
+</footer>
+{% endblock footer %}

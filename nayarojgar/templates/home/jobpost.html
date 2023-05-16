@@ -1,0 +1,12 @@
+{% extends 'header_footer.html' %} {% block content %}
+<div class="container my-5">
+<h1 class="text-center font-extrabold text-lg p-2" style="  background-color: #81ffd9; color: #051726;">Job Post</h1>    
+  <form action="{% url 'jobpost' %}" class="my-2" method="POST">
+    {% csrf_token %} {{ form.as_p }}
+    <input class="btn btn-primary" style="color: #051726;" type="submit" value="Post" />
+  </form>
+</div>
+{% endblock content%}
+{% block loginlogout %}
+<a href="{% url 'logout' %}">Logout</a>
+{% endblock loginlogout %}

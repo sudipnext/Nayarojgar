@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+
+* {
+  font-family: Poppins, sans-serif;
+}
+.select-area {
+  color: #051726;
+}
+.search-button {
+  background-color: #81ffd9;
+  color: #051726;
+}
+
+@media (max-width: 939px) {
+  .select-area,
+  .select-cat,
+  .btn-info {
+    width: fit-content;
+    display: block;
+    margin: 4px auto;
+    color: #051726;
+  }
+  .select-area,
+  .select-cat {
+    padding: 4px;
+    border-radius: 5px;
+  }
+  .lookingfor {
+    text-align: center;
+  }
+}
+
+.select-area,
+.select-cat {
+  padding: 6px;
+  width: 250px;
+}
+
+.featured-cat {
+  color: #051726;
+  background-color: #fff;
+}
+.cat-logo {
+  display: block;
+  margin: 0 auto;
+}
+
+.single-fcat {
+  padding: 5px;
+  background-color: #fff;
+}
+@media (min-width: 500px) {
+  .single-fcat:hover {
+    border: none;
+    background-color: #81ffd9;
+    color: #051726;
+    border: 2px solid #051726;
+    transition-duration: 0.5s;
+  }
+}
+.job_tags,
+.apply-btn {
+  border: 2px solid #81ffd9;
+}
+.post-area {
+  background-color: #051726;
+  color: #81ffd9;
+}
+.apply-btn {
+  background-color: #81ffd9;
+  color: #051726;
+}
+.load-job-btn {
+  color: #051726;
+  background-color: #81ffd9;
+}
+.single-fcat > p{
+  font-weight: bolder;
+}
