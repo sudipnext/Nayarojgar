@@ -1,5 +1,5 @@
 # Nayarojgar
-"Nayarojgar" is a job platform designed to connect job seekers with employers and facilitate the job search process. It serves as a centralized hub where companies can post job vacancies and job seekers can explore and apply for relevant positions.
+
 ### "Nayarojgar" is a job platform designed to connect job seekers with employers and facilitate the job search process. It serves as a centralized hub where companies can post job vacancies and job seekers can explore and apply for relevant positions.
 
 #### Note: As i am alone building this and learning Django side by side so, it may take longer time for some of the below mentioned features. 
